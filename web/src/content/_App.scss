@@ -15,7 +15,7 @@
 }
 
 .header-logo {
-  width: 100px;
+  width: 250px;
   cursor: pointer;
 }
 
@@ -26,6 +26,15 @@
 
 .header-text{
   font-family: $header-font;
+  font-size: 45px;
+}
+
+.days-counter{
+  font-family: $body-text;
+  font-size: 250px;
+  margin: 0;
+  color: darkred;
+  cursor: default;
 }
 
 .normal-weight-font {

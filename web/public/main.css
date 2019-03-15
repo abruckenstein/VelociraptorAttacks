@@ -8,6 +8,13 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'solsticeofsufferingregular';
+  src: url("/assets/fonts/solsticeofsuffering-webfont.eot");
+  src: url("/assets/fonts/solsticeofsuffering-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/solsticeofsuffering-webfont.woff2") format("woff2"), url("/assets/fonts/solsticeofsuffering-webfont.woff") format("woff"), url("/assets/fonts/solsticeofsuffering-webfont.ttf") format("truetype"), url("/assets/fonts/solsticeofsuffering-webfont.svg#solsticeofsufferingregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /* standard media query variables */
 /* color blind safe color palette - see: https://personal.sron.nl/~pault/ */
 /* fonts */
@@ -25,7 +32,7 @@
   font-size: large; }
 
 .header-logo {
-  width: 100px;
+  width: 250px;
   cursor: pointer; }
 
 .spin-logo {
@@ -33,7 +40,15 @@
   animation: rotate-vertical-center 2s cubic-bezier(0.86, 0, 0.07, 1) both infinite; }
 
 .header-text {
-  font-family: "carbon"; }
+  font-family: "Permanent Marker";
+  font-size: 45px; }
+
+.days-counter {
+  font-family: "solsticeofsufferingregular";
+  font-size: 250px;
+  margin: 0;
+  color: darkred;
+  cursor: default; }
 
 .normal-weight-font {
   font-weight: normal !important; }

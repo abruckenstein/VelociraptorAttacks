@@ -11,7 +11,6 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@types/enzyme": "^3.1.11",
     "@types/enzyme-adapter-react-16": "^1.0.2",
     "@types/history": "^4.7.2",
     "@types/jest": "^20.0.8",
@@ -22,7 +21,7 @@
     "@types/react-router-redux": "^5.0.17",
     "@types/redux-logger": "^3.0.6",
     "@types/redux-promise-middleware": "0.0.8",
-    "@types/sinon": "^5.0.7",
+    "@types/sinon": "^5.0.2",
     "ansi-colors": "^3.2.3",
     "axios": "0.17.0",
     "babelify": "^7.3.0",
@@ -120,7 +119,7 @@
     "start": "node_modules/.bin/ts-node server/index.ts",
     "test": "jest --color --verbose --expand --watchAll",
     "watch-sass": "sass --watch web/src/main.scss:web/public/main.css",
-    "watch-server": "cross-env NODE_ENV=production node_modules/.bin/nodemon --exec 'npm run lint && node_modules/.bin/ts-node server/index.ts'",
+    "watch-server": "cross-env NODE_ENV=production node_modules/.bin/nodemon --exec 'node_modules/.bin/ts-node server/index.ts'",
     "watch-typescript": "watchify web/src/index.tsx -p tsify -g [ localenvify --envfile .env ]--debug -o web/public/bundle.js -v",
     "watch-web": "npm run watch-sass & npm run watch-typescript"
   },
