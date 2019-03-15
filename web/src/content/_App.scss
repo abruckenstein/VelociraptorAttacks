@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App-header {
+  background-color: $black;
+  padding: 20px;
+  color: $white;
+
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.header-logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.spin-logo{
+  -webkit-animation: rotate-vertical-center 2s cubic-bezier(0.860, 0.000, 0.070, 1.000) both infinite;
+  animation: rotate-vertical-center 2s cubic-bezier(0.860, 0.000, 0.070, 1.000) both infinite;
+}
+
+.header-text{
+  font-family: $header-font;
+}
+
+.normal-weight-font {
+  font-weight: normal !important;
+}
+
+button {
+  @include button;
+}
+
+.repeater-sample-container {
+  margin-top: 10px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: left;
+  background-color: $white;
+  border: $black 2px solid;
+  border-collapse: collapse;
+
+  th{
+    background-color: $blue;
+    color: $white; 
+    text-align: center;
+    border: $black 1px solid;
+  }
+
+  td {
+    border: $black 1px solid;
+  }
+
+}
+
+#spinner {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: $white;
+}
+
+@-webkit-keyframes rotate-vertical-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vertical-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}

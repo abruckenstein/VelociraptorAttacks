@@ -1,16 +1,16 @@
 {
-  "_from": "react-redux-express-template",
-  "_id": "react-redux-express-template@0.0.11",
+  "_from": "react-redux-express-ts-template",
+  "_id": "react-redux-express-ts-template@3.0.1",
   "_inBundle": false,
-  "_integrity": "sha512-OsylezWGfyfTbUuYVVaKVmuYyNFKkHq2yugR+m8WRfm9l3xE9hQmBgj3nqg+5l4DGBerGVXmG5a3EaXdIn63QA==",
-  "_location": "/react-redux-express-template",
+  "_integrity": "sha512-vhkcRw0UCsLS4u3PcN2CSQyggI0iZ6SsMi61yETE7uOi0PWXEvQtaWmpOyYdjkS/icmfd0zapjTgBRWrFY4ANw==",
+  "_location": "/react-redux-express-ts-template",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "react-redux-express-template",
-    "name": "react-redux-express-template",
-    "escapedName": "react-redux-express-template",
+    "raw": "react-redux-express-ts-template",
+    "name": "react-redux-express-ts-template",
+    "escapedName": "react-redux-express-ts-template",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,13 +19,10 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-redux-express-template/-/react-redux-express-template-0.0.11.tgz",
-  "_shasum": "3f40dd4b65f329364ade1f57ab3451b7229cc128",
-  "_spec": "react-redux-express-template",
-  "_where": "C:\\GitHub\\VelociraptorAttacks\\test",
-  "author": {
-    "name": "chad garland"
-  },
+  "_resolved": "https://registry.npmjs.org/react-redux-express-ts-template/-/react-redux-express-ts-template-3.0.1.tgz",
+  "_shasum": "32266fe580e71a49865f0b962c46f11c92c365e2",
+  "_spec": "react-redux-express-ts-template",
+  "_where": "C:\\GitHub\\VelociraptorAttacks\\some-bullshit",
   "babel": {
     "presets": [
       "es2015",
@@ -37,74 +34,103 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/chadgarlandscg/chadgarlandscg-express-react-template/issues"
+    "url": "https://github.com/begarland/react-redux-express-template/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
+    "@types/enzyme": "^3.1.11",
+    "@types/enzyme-adapter-react-16": "^1.0.2",
+    "@types/history": "^4.7.2",
+    "@types/jest": "^20.0.8",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "^8.10.44",
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "@types/react-router-redux": "^5.0.8",
+    "@types/redux-logger": "^3.0.5",
+    "@types/redux-promise-middleware": "0.0.8",
+    "@types/sinon": "^5.0.1",
     "axios": "0.17.0",
+    "babelify": "^7.3.0",
     "body-parser": "~1.18.2",
-    "bookshelf": "^0.10.4",
-    "bookshelf-camelcase": "^2.0.1",
-    "cookie-parser": "~1.4.3",
+    "browserify": "^16.2.2",
     "date-input-polyfill": "^2.14.0",
-    "debug": "~2.6.9",
-    "dotenv": "^4.0.0",
-    "express": "~4.15.5",
-    "express-react-views": "^0.10.4",
-    "express-validation": "^1.0.2",
-    "google-auth-library": "^0.11.0",
+    "envify": "^4.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.3",
+    "express-react-views": "^0.10.5",
     "history": "^4.6.3",
-    "humps": "^2.0.0",
-    "joi": "^10.4.1",
-    "knex": "^0.13.0",
-    "morgan": "~1.9.0",
-    "pg": "^6.1.5",
-    "pg-promise": "^5.6.8",
+    "inversify": "^4.13.0",
+    "inversify-express-utils": "^6.1.0",
+    "jest": "^22.4.3",
+    "jquery": "3.2.1",
+    "moment": "2.19.3",
+    "nodemon": "^1.17.5",
     "react": "16.0.0",
     "react-dom": "16.0.0",
-    "react-draggable": "3.0.3",
-    "react-google-login": "^3.0.1",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.8",
-    "redux": "^3.7.2",
+    "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
+    "redux-observable": "^1.0.0",
     "redux-promise-middleware": "^4.3.0",
-    "redux-thunk": "^2.2.0",
-    "serve-favicon": "~2.4.5"
+    "redux-thunk": "^2.3.0",
+    "reflect-metadata": "^0.1.12",
+    "rxios": "github:begarland/rxios",
+    "rxjs": "^6.2.0",
+    "rxjs-compat": "^6.2.1",
+    "sinon": "^4.5.0",
+    "ts-jest": "^22.4.2",
+    "ts-node": "^7.0.0",
+    "tsify": "^4.0.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.1",
+    "uglifyify": "^4.0.5",
+    "watchify": "^3.11.0",
+    "winston": "^2.4.2"
   },
   "deprecated": false,
-  "description": "some test description",
-  "devDependencies": {
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.22.0",
-    "babelify": "^7.3.0",
-    "browserify": "^14.5.0",
-    "envify": "^4.1.0",
-    "watchify": "^3.9.0"
+  "description": "some some-bullshit description",
+  "homepage": "https://github.com/begarland/react-redux-express-template#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)(spec|test).tsx?(x)"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ]
   },
-  "homepage": "https://github.com/chadgarlandscg/chadgarlandscg-express-react-template#readme",
-  "license": "ISC",
-  "main": "index.js",
-  "name": "test",
+  "name": "some-bullshit",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chadgarlandscg/chadgarlandscg-express-react-template.git"
+    "url": "git+https://github.com/begarland/react-redux-express-template.git"
   },
   "scripts": {
-    "build": "browserify -t [ babelify --presets [ es2015 react babel-preset-stage-0 ] --plugins [ babel-plugin-transform-decorators-legacy ] ] -t [ envify --NODE_ENV development ] web/src/index.js -o web/public/bundle.js",
-    "init": "sh init.sh",
-    "inspect": "node --inspect ./server/bin/www",
-    "prod": "npm run build | uglifyjs -mc warnings=false > web/public/bundle.js",
-    "sass": "sass --watch web/src/index.scss:web/public/index.css",
-    "server": "supervisor ./server/bin/www",
-    "start": "npm run web-script & npm run server",
-    "web": "npm run sass & watchify -t [ babelify --presets [ es2015 react babel-preset-stage-0 ] --plugins [ babel-plugin-transform-decorators-legacy ] ] -t [ envify --NODE_ENV development ] web/src/index.js -o web/public/bundle.js -v",
-    "web-script": "npm run sass & node build.js"
+    "dev": "npm run watch-server & npm run watch-web",
+    "lint": "tslint 'src/**/*.ts' --force -t codeFrame",
+    "prod": "npm run production-sass & npm run production-web",
+    "production-sass": "sass --sourcemap=none web/src/main.scss:web/public/main.css",
+    "production-web": "browserify web/src/index.tsx -p tsify -g [ envify --NODE_ENV production ] -g [ uglifyify ] -o web/public/bundle.js -v",
+    "start": "npm run prod; node_modules/.bin/ts-node server/index.ts",
+    "test": "jest --color --verbose --expand --watchAll",
+    "watch-sass": "sass --watch web/src/main.scss:web/public/main.css",
+    "watch-server": "NODE_ENV=development node_modules/.bin/nodemon --exec 'yarn run lint && node_modules/.bin/ts-node server/index.ts'",
+    "watch-typescript": "watchify web/src/index.tsx -p tsify --debug -o web/public/bundle.js -v",
+    "watch-web": "npm run watch-sass & npm run watch-typescript"
   },
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "license": "BSD"
 }

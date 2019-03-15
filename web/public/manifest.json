@@ -1,6 +1,6 @@
 {
-  "short_name": "React Redux Express App",
-  "name": "React Redux Express App Template",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

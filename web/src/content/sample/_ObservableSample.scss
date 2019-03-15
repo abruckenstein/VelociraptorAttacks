@@ -1,0 +1,46 @@
+#observable-sample-box-slider-container{
+  position: relative;
+  height: 50px;
+  width: 75%;
+  margin: 10px auto;
+  background-color: $black;
+  border-radius: $border-radius;
+}
+
+#observable-sample-box{
+  height: 100%;
+  width: 25%;
+  background-color: $red;
+  position: absolute;
+  border-radius: $border-radius;
+}
+
+.box-animate{
+  left: 0px;
+  -webkit-animation: slide 2s infinite;
+  animation: slide 2s infinite;
+
+}
+@-webkit-keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 75%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 75%;
+  }
+  100% {
+    left: 0;
+  }
+}
