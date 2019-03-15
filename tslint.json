@@ -54,9 +54,9 @@
         "quotemark": [true, "single", "jsx-double"],
         "semicolon": [true, "never", "ignore-interfaces"],
         "switch-default": true,
-
+ 
         "trailing-comma": false,
-
+ 
         "triple-equals": [ true, "allow-null-check" ],
         "typedef": [
             true,
@@ -85,4 +85,4 @@
             "check-typecast"
         ]
     }
-}
+ }
