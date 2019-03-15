@@ -3,6 +3,7 @@ import * as React from 'react'
 import Routes from './Routes'
 import { AppStateTypes } from '../redux/store/templates/appState'
 import * as firebase from 'firebase';
+import "firebase/database";
 
 const reactLogo = './assets/images/raptor_flipped.png'
 
@@ -18,7 +19,7 @@ interface AppTypes {
     logoClick: () => void;
 }
 
-var config = {
+const config = {
     apiKey: "AIzaSyBFxlDxENgHf9LM5oMT9bqoURy8cV7nTG8",
     authDomain: "raptorattacks-526a8.firebaseapp.com",
     databaseURL: "https://raptorattacks-526a8.firebaseio.com",
@@ -26,9 +27,11 @@ var config = {
     storageBucket: "raptorattacks-526a8.appspot.com",
     messagingSenderId: "238522833662"
   };
-  firebase.initializeApp(config);
+const firebaseApp = firebase.initializeApp(config);
 
-var database = firebase.database();
+const database = firebaseApp.database();
+const raptorAttacksDb = database.ref().child("survivalRecords");
+const snapshot = raptorAttacksDb.once('value').then((result) => console.log("Result: " + result)).catch((error) => console.error("BAD FIREBASE, BAD!: " + error));
 let currentDaysSinceAttacks = 3;
 let previousDaysSinceAttacks = [{
     endDate: new Date,
